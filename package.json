@@ -1,5 +1,5 @@
 {
-  "name": "dogrun-template-next",
+  "name": "example-next-auth-slack",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,13 @@
   },
   "dependencies": {
     "next": "9.5.3",
+    "next-auth": "^3.1.0",
     "react": "16.13.1",
     "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.11.2",
+    "@types/react": "^16.9.49",
+    "typescript": "^4.0.3"
   }
 }
