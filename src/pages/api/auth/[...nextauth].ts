@@ -9,6 +9,16 @@ const options = {
       clientSecret: process.env.SLACK_CLIENT_SECRET
     })
   ],
+  callbacks: {
+    signIn: async (user, account, profile) => {
+      console.log(user, account, profile)
+      return Promise.resolve(true)
+    },
+    session: async (session, user, sessionToken) => {
+      console.log(session, user, sessionToken)
+      return Promise.resolve(session)
+    }
+  }
 }
 
 export default (req, res) => NextAuth(req, res, options)
